@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../store/store';
-import { addScript, removeScript, updateSpritePosition } from '../store/spriteSlice';
+import { addScript, updateSpritePosition } from '../store/spriteSlice';
 
 export default function MidArea() {
   const activeSprite = useSelector((state: RootState) => 

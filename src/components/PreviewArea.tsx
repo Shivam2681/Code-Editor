@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../store/store';
 import { updateSpritePosition } from '../store/spriteSlice';

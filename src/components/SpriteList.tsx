@@ -1,4 +1,3 @@
-import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addSprite, setActiveSprite } from '../store/spriteSlice';
 import type { RootState } from '../store/store';

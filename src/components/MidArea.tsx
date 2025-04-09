@@ -133,6 +133,8 @@ export default function MidArea() {
       onDrop={handleDrop}
       onDragOver={handleDragOver}
     >
+
+      {/* main div */}
       <div className="font-bold mb-4">Scripts for {activeSprite?.name}</div>
       <div className="space-y-2">
         {activeSprite?.scripts.map((script) => (

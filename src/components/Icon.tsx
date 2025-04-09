@@ -1,7 +1,13 @@
-import React from "react";
 
-export default function Icon({ name, size = 20, className = "" }) {
+interface IconProps {
+  name: string;
+  size?: number;
+  className?: string;
+}
+
+export default function Icon({ name, size = 20, className = "" }: IconProps) {
   return (
+    
     <svg
       className={`fill-current ${className}`}
       width={size.toString() + "px"}

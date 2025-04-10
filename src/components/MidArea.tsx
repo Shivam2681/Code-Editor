@@ -84,9 +84,10 @@ export default function MidArea() {
 
       switch (script.action) {
         case 'move':
+          const steps = script.params.steps;
           const angle = (rotation * Math.PI) / 180;
-          const newX = currentX + Math.cos(angle);
-          const newY = currentY + Math.sin(angle);
+          const newX = currentX + (steps * Math.cos(angle) * 2);
+          const newY = currentY + (steps * Math.sin(angle) * 2);
           
           // Check boundaries (assuming preview area is 500x500)
           const boundedX = Math.max(0, Math.min(newX, 450));
